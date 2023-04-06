@@ -3,19 +3,40 @@
 
 	Overview:
 
-			The application is Spring REST interface which consists of the following technologies:
+		The application is Spring REST interface which consists of the following technologies:
 
-			1. 	Spring Boot 3.0.5, with Java 17
-			2. 	MySql or H2 database options
-			3. Kafka and Zookeeper for offline processes
-			4. Freebase for push notifications
-			4. Maven asd the build tool
+		1. 	Spring Boot 3.0.5, with Java 17
+		2. 	MySql or H2 database options
+		3. 	Kafka and Zookeeper for offline processes
+		4. 	Freebase for push notifications
+		4. 	Maven asd the build tool
 
 			No frontend is provided. However, a Postman project is provided as well with all the API calls and JSON examples.
 
 			It runs as a stand-alone jar file. A docker-compose.yaml file is provided to create the Kakfa and Zooper servers, if needed.
 	
-
+	
+	Quick Start:
+	
+		1.	Start Docker
+		2.	Navigate to root directory
+		3.	Type:
+				docker-compose.yaml
+			Check broker and zookeeper running:
+				docker ps
+		4.	Build:
+				mvn package -D:skip-tests
+  
+		5.	Run:
+			java -j target/Bankx-1.0.0-SNAPSHOT.jar
+		
+		6.	Postman - Use:
+			http://localhost:8080
+	
+		7.	H2 Database:
+			http://localhost:8080/h2-console
+			
+	
 	Getting Started:
 
 	1. 		Clone the application:
