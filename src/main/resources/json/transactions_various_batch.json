@@ -1,0 +1,97 @@
+[
+    {
+        "originatingAccount": null,
+        "originatingCardNumber": null,
+        "destinationAccount": {
+            "id": 1
+        },
+        "destinationCardNumber": 8788105202872485,
+        "processingBank": {
+            "id": 1
+        },
+        "customerBank": {
+            "id": 1
+        },
+        "amount": 256.45,
+        "reference": "Card Transaction",
+        "transactionType": "DEBIT",
+        "processingType": "REALTIME",
+        "status": "INITIALIZED"
+    },
+    {
+        "originatingAccount": null,
+        "originatingCardNumber": null,
+        "destinationAccount": {
+            "id": 3
+        },
+        "destinationCardNumber": 5830314371079333,
+        "processingBank": {
+            "id": 2
+        },
+        "customerBank": {
+            "id": 1
+        },
+        "externalReference": "Processed by BankZ",
+        "amount": 400.00,
+        "reference": "ATM Withdrawal",
+        "transactionType": "DEBIT",
+        "processingType": "REALTIME",
+        "status": "INITIALIZED"
+    },
+    {
+        "originatingAccount": null,
+        "originatingCardNumber": null,
+        "destinationAccount": {
+            "id": 5
+        },
+        "processingBank": {
+            "id": 2
+        },
+        "customerBank": {
+            "id": 1
+        },
+        "externalReference": "Credit",
+        "amount": 100.00,
+        "reference": "Credit from BankZ",
+        "transactionType": "CREDIT",
+        "processingType": "REALTIME",
+        "status": "INITIALIZED"
+    },
+    {
+        "originatingAccount": {
+            "id": 2
+		},
+        "destinationAccount": {
+            "id": 1
+        },
+        "processingBank": {
+            "id": 1
+        },
+        "customerBank": {
+            "id": 2
+        },
+        "amount": 50.00,
+        "reference": "From Saving to Current",
+		 "processingType": "REALTIME",
+        "status": "INITIALIZED"
+    },
+    {
+	     "originatingAccount": {
+            "id": 2
+		},
+        "destinationAccount": {
+            "id": 1
+        },
+        "processingBank": {
+            "id": 1
+        },
+        "customerBank": {
+            "id": 1
+        },
+        "amount": 150.00,
+        "reference": "From Saving to Current",
+		 "processingType": "REALTIME",
+        "transactionType": "TRANSFER",
+        "status": "INITIALIZED"
+    }
+    ]
