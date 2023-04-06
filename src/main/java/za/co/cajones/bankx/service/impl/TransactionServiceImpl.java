@@ -49,7 +49,7 @@ public class TransactionServiceImpl implements TransactionService {
 		Optional<Transaction> optionalTransaction = transactionRepository.findById(transactionId);
 		return optionalTransaction.get();
 	}
-	
+
 	@Override
 	public List<Transaction> getOriginatingTransactionsByAccountId(Long id) {
 		return transactionRepository.getOriginatingTransactionsByAccountIdOrderByGroupIdAsc(id);
@@ -473,7 +473,7 @@ public class TransactionServiceImpl implements TransactionService {
 					"**** Error: Customer Account is missing (Destination Account). Transaction not persisted.");
 			return transaction;
 		}
-		
+
 		if (transaction.getExternalReference() == null && transaction.getProcessingBank().getId() != Utils.getBankXId()) {
 			transaction.setStatus(TransactionStatus.ERROR);
 			transaction.setError(
@@ -540,7 +540,7 @@ public class TransactionServiceImpl implements TransactionService {
 		else
 			// Default Processing Bank to BankX.
 			savedTransaction.setProcessingBank(bankService.getBankById(Utils.getBankXId()));
-		
+
 		savedTransaction.setCustomerBank(savedAccount.getCustomer().getBank());
 
 		savedTransaction.setExternalReference(transaction.getExternalReference());

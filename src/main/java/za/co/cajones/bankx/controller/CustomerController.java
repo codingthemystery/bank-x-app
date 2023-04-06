@@ -10,17 +10,15 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.extern.slf4j.Slf4j;
 import za.co.cajones.bankx.entity.Account;
 import za.co.cajones.bankx.entity.Customer;
 import za.co.cajones.bankx.service.CustomerService;
 
-@Slf4j
+
 @RestController
 @RequestMapping("customers")
 public class CustomerController {
@@ -55,7 +53,7 @@ public class CustomerController {
         Customer savedCustomer = customerService.onboardCustomer(customer);
         return new ResponseEntity<>(savedCustomer, HttpStatus.CREATED);
     }
-    
+
     //Update Customer
     public ResponseEntity<Customer> updateCustomer(@PathVariable("id") Long customerId,
                                            @RequestBody Customer customer){

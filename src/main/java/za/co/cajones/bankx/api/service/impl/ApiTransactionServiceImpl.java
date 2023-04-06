@@ -1,20 +1,18 @@
 package za.co.cajones.bankx.api.service.impl;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
-
 import lombok.extern.slf4j.Slf4j;
 import za.co.cajones.bankx.api.service.ApiTransactionService;
+import za.co.cajones.bankx.components.DtoUtils;
 import za.co.cajones.bankx.dto.TransactionDto;
 import za.co.cajones.bankx.entity.Transaction;
 import za.co.cajones.bankx.repository.TransactionRepository;
-import za.co.cajones.bankx.components.DtoUtils;
 
 @Slf4j
 @Service
@@ -33,7 +31,7 @@ public class ApiTransactionServiceImpl implements ApiTransactionService {
 			log.debug("***** Get all BankZ No of converted transactions " + transactionDtos.size());
 			return transactionDtos;
 		} else {
-			return new ArrayList();
+			return new ArrayList<TransactionDto>();
 		}
 	}
 

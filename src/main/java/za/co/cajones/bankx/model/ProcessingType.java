@@ -1,4 +1,4 @@
-package za.co.cajones.bankx.model; 
+package za.co.cajones.bankx.model;
 
 public enum ProcessingType {
     REALTIME("Real-time"),

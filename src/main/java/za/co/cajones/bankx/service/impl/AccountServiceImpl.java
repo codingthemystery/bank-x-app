@@ -34,7 +34,7 @@ public class AccountServiceImpl implements AccountService {
 	public List<Account> getAccountsByCustomerId(Long customerId) {
 		return accountRepository.getAccountsByCustomerId(customerId);
 	}
-	
+
 
 	@Override
 	public Account getAccountByCardNumber(Long cardNumber) {

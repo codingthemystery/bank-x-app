@@ -18,7 +18,7 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
 	@Query("SELECT t FROM Transaction t WHERE t.processingBank.id = ?1")
 	List<Transaction> findByProcessingBankOrdersByExternalReferenceAsc(Long id);
 
-	
+
 	@Query("SELECT t FROM Transaction t WHERE t.originatingAccount.id= ?1")
 	List<Transaction> getOriginatingTransactionsByAccountIdOrderByGroupIdAsc(Long id);
 

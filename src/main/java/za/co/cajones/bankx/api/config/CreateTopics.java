@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Configuration
 class KafkaTopicConfig {
-	
+
     @Value(value = "${spring.kafka.bootstrap-servers}")
     private String bootstrapAddress;
 
@@ -26,7 +26,7 @@ class KafkaTopicConfig {
         configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
         return new KafkaAdmin(configs);
     }
-    
+
 	@Bean
 	public NewTopic reconciliation() {
 		log.info("Creating Topic: reconciliations");
@@ -38,7 +38,7 @@ class KafkaTopicConfig {
 		log.info("Creating Topic: reconciliations-responses");
 		return TopicBuilder.name("reconciliations-responses").build();
 	}
-	
+
 	@Bean
 	public NewTopic transaction() {
 		log.info("Creating Topic: transactions");

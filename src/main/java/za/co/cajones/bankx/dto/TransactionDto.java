@@ -5,20 +5,16 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.annotations.CreationTimestamp;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import za.co.cajones.bankx.model.ProcessingType;
 import za.co.cajones.bankx.model.TransactionStatus;
 import za.co.cajones.bankx.model.TransactionType;
-import za.co.cajones.bankx.entity.Transaction;
 
-@Slf4j
+
 @NoArgsConstructor
 @Getter
 @Setter

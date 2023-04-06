@@ -24,8 +24,6 @@ public class MessageController {
     @Autowired
     private MessageService messageService;
 
-    private Note note;
-
 	@ResponseBody
 	public String sendNotification(@RequestBody Note note,
 	                               @RequestParam String token) throws FirebaseMessagingException {

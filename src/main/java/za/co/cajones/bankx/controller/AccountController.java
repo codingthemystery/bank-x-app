@@ -15,11 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.extern.slf4j.Slf4j;
 import za.co.cajones.bankx.entity.Account;
 import za.co.cajones.bankx.service.AccountService;
 
-@Slf4j
 @RestController
 @RequestMapping("accounts")
 public class AccountController {

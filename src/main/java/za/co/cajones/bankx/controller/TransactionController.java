@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.extern.slf4j.Slf4j;
-import za.co.cajones.bankx.entity.Account;
 import za.co.cajones.bankx.entity.Transaction;
 import za.co.cajones.bankx.service.TransactionService;
 
@@ -51,7 +50,7 @@ public class TransactionController {
         List<Transaction> transactions = transactionService.getOriginatingTransactionsByAccountId(id);
         return new ResponseEntity<>(transactions, HttpStatus.OK);
     }
-    
+
 	// Process several transactions.
 	@PostMapping("/multi")
 	public ResponseEntity<List<Transaction>> addTransactions(@RequestBody List<Transaction> transactions) {

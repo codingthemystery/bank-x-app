@@ -12,7 +12,7 @@ public interface TransactionService {
     Transaction getTransactionById(Long transactionId);
 
     //List<Transaction> findByProcessingBankOrdersByExternalReferenceAsc(Long id);
-    
+
     List<Transaction> getOriginatingTransactionsByAccountId(Long accountId);
 
 	List<Transaction> addTransactions(List<Transaction> transactions);

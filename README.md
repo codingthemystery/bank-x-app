@@ -9,7 +9,7 @@
 		2. 	MySql or H2 database options
 		3. 	Kafka and Zookeeper for offline processes
 		4. 	Freebase for push notifications
-		4. 	Maven asd the build tool
+		4. 	Maven as the build tool
 
 			No frontend is provided. However, a Postman project is provided as well with all the API calls and JSON examples.
 
@@ -25,7 +25,7 @@
 			Check broker and zookeeper running:
 				docker ps
 		4.	Build:
-				mvn package -D:skip-tests
+				mvn package
   
 		5.	Run:
 			java -j target/Bankx-1.0.0-SNAPSHOT.jar
@@ -56,7 +56,7 @@
 			time depending on which Maven profile is used to build the project. Currently, DEV will activate the win profile and STAGE and PRD will active the linux profile. This 
 			can be changed in the pom.xml file or at build time (using -P [profile.id]).
 
-				[profiles>
+				<profiles>
 					[profile>
 						[id>DEV[/id>
 						[properties>
@@ -84,7 +84,7 @@
 							[activeByDefault>false[/activeByDefault>
 						[/activation>
 					[/profile>
-				[/profiles>
+				</profiles>
 
 			Go to src/main/resources and change the application-win.properties or application-linux.properties as necessary.	
 		
@@ -218,9 +218,9 @@
 		
 				java -jar Bankx-1.0.0-SNAPSHOT.jar
 			
-			Alternatively, you can run the app without packaging it using -
+			Alternatively, you can run the app without packaging it using:
 
-				mvn spring-boot:run -Dmaven.test.skip
+				mvn spring-boot:run
 			
 			Use CTRL+C to cancel.
 		
