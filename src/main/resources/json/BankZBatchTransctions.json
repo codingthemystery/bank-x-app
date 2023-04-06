@@ -1,0 +1,56 @@
+[
+{
+    "processingBankId" : 2,
+    "externalReference" : "****** Kafta Transaction 1",
+    "destinationAccountId" : 1,
+    "originatingCardNumber" : 42345674344643456,
+    "transactionType": "CREDIT",
+    "amount" : 100.00,
+    "reference" : "Credit from Bankz",
+    "status": "INITIALIZED",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId" : 2,
+    "externalReference" : "****** Kafta Transaction 2",
+    "destinationAccountId" : 1,
+    "transactionType" : "FEE",
+    "amount" : 45.00,
+    "reference" : "Charge from Bankz",
+    "status" : "INITIALIZED",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId": 2,
+    "externalReference" : "****** Kafta Transaction 3",
+    "originatingCardNumber" : 41236467533337888,
+    "destinationAccountId" : 6,
+    "transactionType": "CREDIT",
+    "amount": 134.33,
+    "reference" : "Credit",
+    "status": "INITIALIZED",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId": 2,
+    "externalReference" : "****** Kafta Transaction 4",
+    "originatingCardNumber" : 41236463333337888,
+    "destinationAccountId" : 5,
+    "transactionType": "DEBIT",
+    "amount": 2340.00,
+    "reference": "Should fait",
+    "status": "INITIALIZED",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId": 2,
+    "externalReference" : "****** Testing Kafka trans 5",
+    "originatingCardNumber" : 4123646766667888,
+    "destinationAccountId" : 4,
+    "transactionType": "DEBIT",
+    "amount": 1000.00,
+    "reference": "Credit card transaction",
+    "status": "INITIALIZED",
+    "processingType": "BATCH"
+}
+]

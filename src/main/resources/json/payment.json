@@ -1,74 +1,19 @@
-[
-    {
-        "originatingBank": {
-            "id": 1
-        },
-        "destinationAccount": {
-            "id": 18
-        },
-        "destinationBank": {
-            "id": 1
-        },
-        "transactionType": "C",
-        "amount": 500.00,
-        "reference": "Bank Credit",
-        "status": "I",
-        "processingType": "R"
+{
+    "originatingAccount": {
+              "id": 2
     },
-    {
-        "originatingAccount": {
-            "id": 3
-        },
-        "originatingBank": {
-            "id": 1
-        },
-        "destinationAccount": {
-            "id": 4
-        },
-        "destinationBank": {
-            "id": 1
-        },
-        "transactionType": "T",
-        "amount": 30.00,
-        "reference": "Transfer",
-        "status": "I"
+    "originatingBank": {
+        "id": 1
     },
-    {
-        "originatingAccount": {
-            "id": 4
-        },
-        "originatingBank": {
-            "id": 1
-        },
-        "destinationAccount": {
-            "id": 19
-        },
-        "destinationBank": {
-            "id": 1
-        },
-        "transactionType": "P",
-        "amount": 10.00,
-        "reference": "Payment",
-        "status": "P",
-        "processingType": "R"
+    "destinationAccount": {
+        "id": 4
     },
-    {
-        "originatingAccount": {
-            "id": 4
-        },
-        "originatingBank": {
-            "id": 1
-        },
-        "destinationAccount": {
-            "id": 19
-        },
-        "destinationBank": {
-            "id": 1
-        },
-        "transactionType": "P",
-        "amount": 43.00,
-        "reference": "Payment",
-        "status": "i",
-        "processingType": "R"
-    }
-]
+    "destinationBank": {
+        "id": 1
+    },
+    "transactionType": "PAYMENT",
+    "amount": 100,
+    "reference": "Payment",
+    "status": "INITIALIZED",
+    "processingType": "REALTIME"
+}

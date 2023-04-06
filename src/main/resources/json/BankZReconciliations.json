@@ -1,0 +1,54 @@
+[
+{
+    "processingBankId" : 2,
+    "externalReference" : "****** Kafta Recon Trans 1",
+    "destinationAccountId" : 1,
+    "originatingCardNumber" : 42345674344643456,
+    "transactionType": "CREDIT",
+    "amount" : 100.00,
+    "reference" : "Credit from Bankz",
+    "status": "RECONCILING",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId" : 2,
+    "externalReference" : "****** Kafta Recon Trans 2",
+    "destinationAccountId" : 1,
+    "transactionType" : "FEE",
+    "amount" : 45.00,
+    "reference" : "Charge from Bankz",
+    "status" : "RECONCILING",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId": 2,
+    "externalReference" : "****** Kafta Recon Trans 3",
+    "originatingCardNumber" : 4123646754437888,
+    "destinationAccountId" : 6,
+    "transactionType": "CREDIT",
+    "amount": 134.33,
+    "reference" : "Credit",
+    "status": "RECONCILING",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId": 2,
+    "externalReference" : "****** Kafta Recon Trans 4",
+    "destinationAccountId" : 5,
+    "transactionType": "DEBIT",
+    "amount": 2340.00,
+    "reference": "Should fait",
+    "status": "RECONCILING",
+    "processingType": "BATCH"
+},
+{
+    "processingBankId": 2,
+    "externalReference" : "****** Testing Kafka Recon trans 5",
+    "destinationAccountId" : 4,
+    "transactionType": "DEBIT",
+    "amount": 1000.00,
+    "reference": "Credit card transaction",
+    "status": "RECONCILING",
+    "processingType": "BATCH"
+}
+]

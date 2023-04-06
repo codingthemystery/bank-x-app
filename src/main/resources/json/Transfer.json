@@ -1,0 +1,20 @@
+ {
+        "originatingAccount": {
+            "id": 1
+        },
+        "processingBank": {
+            "id": 1
+        },
+        "destinationAccount": {
+            "id": 2
+        },
+        "customerBank": {
+            "id": 1
+        },
+        "transactionType": "TRANSFER",
+        "amount": 200.00,
+        "reference": "From savings",
+        "processingType": "REALTIME",
+        "status": "INITIALIZED"
+
+    }
