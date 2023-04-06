@@ -36,6 +36,8 @@
 		7.	H2 Database:
 			http://localhost:8080/h2-console
 			
+		8. 	Send an email address to cajones6576@gmail.com for Postman access.
+			
 	
 	Getting Started:
 
